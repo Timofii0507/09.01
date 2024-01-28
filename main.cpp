@@ -2,25 +2,26 @@
 #include "aspirant.h"
 #include <Windows.h>
 
-int main() 
+int main()
 {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	string name, surname, specialization;
-	int age, course;
+	string name;
+	int age;
+	int year;
+	string scientific_advisor;
+	string topic_of_thesis;
 	cout << "¬вед≥ть ≥м'€ студента: ";
 	cin >> name;
-	cout << "¬вед≥ть пр≥звище студента: ";
-	cin >> surname;
 	cout << "¬вед≥ть в≥к студента: ";
 	cin >> age;
 	cout << "¬вед≥ть курс студента: ";
-	cin >> course;
-	Student student(name, surname, age, course);
-	cout << "¬вед≥ть спец≥ал≥зац≥ю асп≥ранта: ";
-	cin >> specialization;
-	Aspirant aspirant(name, surname, age, course, specialization);
-	student.print();
+	cin >> year;
+	cout << "¬вед≥ть ≥м'€ наукового кер≥вника: ";
+	cin >> scientific_advisor;
+	cout << "¬вед≥ть тему дисертац≥њ: ";
+	cin >> topic_of_thesis;
+	Aspirant aspirant(name, age, year, scientific_advisor, topic_of_thesis);
 	aspirant.print();
 	return 0;
 }

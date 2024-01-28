@@ -8,33 +8,25 @@ using namespace std;
 class Student 
 {
 public:
+    string name;
+    int age;
+    int year;
+
     Student() {}
-    Student(string name, string surname, int age, int course) 
+
+    Student(string name, int age, int year) 
     {
         this->name = name;
-        this->surname = surname;
         this->age = age;
-        this->course = course;
+        this->year = year;
     }
-    string getName() const { return name; }
-    void setName(string name) { this->name = name; }
-    string getSurname() const { return surname; }
-    void setSurname(string surname) { this->surname = surname; }
-    int getAge() const { return age; }
-    void setAge(int age) { this->age = age; }
-    int getCourse() const { return course; }
-    void setCourse(int course) { this->course = course; }
-    virtual void print() const {
+
+    void print() 
+    {
         cout << "Ім'я: " << name << endl;
-        cout << "Прізвище: " << surname << endl;
         cout << "Вік: " << age << endl;
-        cout << "Курс: " << course << endl;
+        cout << "Курс: " << year << endl;
     }
-private:
-    string name;
-    string surname;
-    int age;
-    int course;
 };
 
 #endif

@@ -3,8 +3,11 @@
   <ItemGroup>
     <ClCompile Include="student.h" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="main2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aspirant.h" />
+    <ClInclude Include="passport.h" />
+    <ClInclude Include="foreignpassport.h" />
   </ItemGroup>
 </Project>

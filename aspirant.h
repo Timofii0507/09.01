@@ -6,21 +6,24 @@
 class Aspirant : public Student 
 {
 public:
+    string scientific_advisor;
+    string topic_of_thesis;
+
     Aspirant() {}
-    Aspirant(string name, string surname, int age, int course, string specialization)
-        : Student(name, surname, age, course) 
+
+    Aspirant(string name, int age, int year, string scientific_advisor, string topic_of_thesis)
+        : Student(name, age, year) 
     {
-        this->specialization = specialization;
+        this->scientific_advisor = scientific_advisor;
+        this->topic_of_thesis = topic_of_thesis;
     }
-    string getSpecialization() const { return specialization; }
-    void setSpecialization(string specialization) { this->specialization = specialization; }
-    virtual void print() const override 
+
+    void print() 
     {
         Student::print();
-        cout << "Спеціалізація: " << specialization << endl;
+        cout << "Науковий керівник: " << scientific_advisor << endl;
+        cout << "Тема дисертації: " << topic_of_thesis << endl;
     }
-private:
-    string specialization;
 };
 
 #endif
