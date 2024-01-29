@@ -1,3 +1,4 @@
+#include "student.h"
 #include "aspirant.h"
 #include <Windows.h>
 
