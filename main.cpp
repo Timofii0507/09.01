@@ -1,4 +1,3 @@
-#include "student.h"
 #include "aspirant.h"
 #include <Windows.h>
 
@@ -11,15 +10,15 @@ int main()
 	int year;
 	string scientific_advisor;
 	string topic_of_thesis;
-	cout << "Ââåä³òü ³ì'ÿ ñòóäåíòà: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ Â³Ã¬'Ã¿ Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 	cin >> name;
-	cout << "Ââåä³òü â³ê ñòóäåíòà: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ Ã¢Â³Ãª Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 	cin >> age;
-	cout << "Ââåä³òü êóðñ ñòóäåíòà: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ ÃªÃ³Ã°Ã± Ã±Ã²Ã³Ã¤Ã¥Ã­Ã²Ã : ";
 	cin >> year;
-	cout << "Ââåä³òü ³ì'ÿ íàóêîâîãî êåð³âíèêà: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ Â³Ã¬'Ã¿ Ã­Ã Ã³ÃªÃ®Ã¢Ã®Ã£Ã® ÃªÃ¥Ã°Â³Ã¢Ã­Ã¨ÃªÃ : ";
 	cin >> scientific_advisor;
-	cout << "Ââåä³òü òåìó äèñåðòàö³¿: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ Ã²Ã¥Ã¬Ã³ Ã¤Ã¨Ã±Ã¥Ã°Ã²Ã Ã¶Â³Â¿: ";
 	cin >> topic_of_thesis;
 	Aspirant aspirant(name, age, year, scientific_advisor, topic_of_thesis);
 	aspirant.print();
