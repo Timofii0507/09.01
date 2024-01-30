@@ -20,12 +20,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main2.cpp" />
+    <ClCompile Include="main3.cpp" />
     <ClCompile Include="student.h" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aspirant.h" />
     <ClInclude Include="foreignpassport.h" />
+    <ClInclude Include="lab3.h" />
     <ClInclude Include="passport.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
